@@ -19,9 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-c+ln(_dgzw@18qr2f0t$dh92stlz-&i9*72xuz9pw-g(bnrdow'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -78,7 +75,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'online_shop',
-        'PASSWORD':'0Q259PL)+',
+        
         'USER':'postgres',
         'PORT':5432
     }
