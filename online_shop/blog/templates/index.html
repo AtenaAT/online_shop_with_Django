@@ -1,0 +1,22 @@
+{% extends "parent/main.html" %}
+ 
+{% block title %}  
+    blog 
+{% endblock %}
+
+{% block body %}  
+
+    <h1>all posts: </h1>
+    {% if post_list %}
+        <ul>
+            {% for post in post_list %}
+                <li>
+                    <a href="/blog/ {{ post.id }}"> {{post.post_title}}  </a> 
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p style="color:deeppink;" > No post is avaliable </p>
+    {% endif %}
+
+{% endblock %}
